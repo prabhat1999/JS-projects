@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Score-Keeper</title>
+
+    <style>
+        .score{
+            margin: 20px auto 30px 70px;
+
+        }
+        #heading{
+            text-align: center;
+            font-family:Georgia, 'Times New Roman';
+        }
+        .win-class{
+            background: green;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="heading">SCORE-KEEPER</h1>
+    </header>
+
+    <h2 id="player">PLAYER1 - PLAYER2</h2>
+    <h2 id="score"><span id="firstSc">0</span> - <span id = "secondSc">0</span></h2>
+    
+    <h3>Playing to: <span id= "maxgame">5</span></h3>
+
+    <input type = "number" id="max-lim">
+    <button type = "button" id="but1">Player 1</button>
+    <button type = "button" id="but2">Player 2</button>
+    <button type = "reset" id="reset">Reset</button>
+
+   <script type="text/javascript" src="scorekeep.js"></script>
+</body>
+</html>
