@@ -11,37 +11,43 @@ var gameOver = false;
 
 
 but1.addEventListener("click",function(){
-    if(gameOver == false){
-    play1++;
-    //scoreString();
-    firstdisplay.textContent = play1;
-    if(play1 >= max){
-        gameOver = true;
-        firstdisplay.classList.add("win-class");
-    }
+    if(gameOver == false)
+    {
+        play1++;
+        //scoreString();
+        if(play1 >= max){
+            gameOver = true;
+            firstdisplay.classList.add("win-class");
+        }
+        firstdisplay.textContent = play1;
+    
     }
 });
 
 but2.addEventListener("click",function(){
-    if(gameOver == false){
-    play2++;
-    //scoreString();
-    seconddisplay.textContent = play2;
-    if(play2 >= max){
-        gameOver = true;
-        seconddisplay.classList.add("win-class");
-    }
+    if(gameOver == false)
+    {
+        play2++;
+        //scoreString();
+        if(play2 >= max){
+            gameOver = true;
+            seconddisplay.classList.add("win-class");
+        }
+        seconddisplay.textContent = play2;
+    
     }
 });
 
 maximum.addEventListener("change",function(){
     
-    max = maximum.value;
+    max = Number(maximum.value);
     maximumDisplay.textContent = max;
-      
+    resetGame();
 });
 
-reset.addEventListener("click", function(){
+reset.addEventListener("click",resetGame);
+
+function resetGame(){
     gameOver = false;
     play1 = 0;
     play2 = 0;
@@ -50,5 +56,4 @@ reset.addEventListener("click", function(){
     firstdisplay.classList.remove("win-class");
     seconddisplay.textContent = play2;
     seconddisplay.classList.remove("win-class");
-});
-
+}

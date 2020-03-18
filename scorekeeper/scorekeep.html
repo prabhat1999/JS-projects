@@ -14,28 +14,36 @@
         #heading{
             text-align: center;
             font-family:Georgia, 'Times New Roman';
+            margin-bottom: 50px;
+        }
+        #container{
+            text-align: center;
+            margin: 0 auto;
         }
         .win-class{
-            background: green;
+            color: green;
         }
     
     
     </style>
 </head>
 <body>
-    <header>
-        <h1 id="heading">SCORE-KEEPER</h1>
-    </header>
+    <div id="container">
+        <header>
+            <h1 id="heading">SCORE-KEEPER</h1>
+        </header>
 
-    <h2 id="player">PLAYER1 - PLAYER2</h2>
-    <h2 id="score"><span id="firstSc">0</span> - <span id = "secondSc">0</span></h2>
-    
-    <h3>Playing to: <span id= "maxgame">5</span></h3>
+        <h2 id="player">PLAYER1 - PLAYER2</h2>
+        <h2 id="score"><span id="firstSc">0</span> - <span id = "secondSc">0</span></h2>
 
-    <input type = "number" id="max-lim">
-    <button type = "button" id="but1">Player 1</button>
-    <button type = "button" id="but2">Player 2</button>
-    <button type = "reset" id="reset">Reset</button>
+        <h3>Playing to: <span id= "maxgame">5</span></h3>
+
+        <input type = "number" id="max-lim">
+        <button type = "button" id="but1">Player 1</button>
+        <button type = "button" id="but2">Player 2</button>
+        <button type = "reset" id="reset">Reset</button>
+
+    </div>
 
    <script type="text/javascript" src="scorekeep.js"></script>
 </body>
